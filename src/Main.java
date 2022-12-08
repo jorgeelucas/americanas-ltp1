@@ -19,6 +19,7 @@ public class Main {
         System.out.println("Brasil, " + hora % 24 + "h" + minuto+"min");
         System.out.println("Mexico, " + ((hora - 3) + 24) % 24 + "h" + minuto+"min");
         System.out.println("Londres, " + ((hora + 3) + 24) % 24 + "h" + minuto+"min");
+        // comentario git
 
     }
 }
