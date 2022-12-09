@@ -1,0 +1,22 @@
+Exercício:
+
+Desenvolva um programa que vai pedir a hora e o minuto,
+depois solicite quantidade de minutos para adicionar
+e imprima a nova hora (com os minutos adicionados) em 3 fusos diferentes;
+
+ex.:
+
+ENTRADA ->
+
+informe a hora: 10
+informe o minuto: 12
+
+informe a quantidade de minutos para adicionar: 40
+
+
+
+SAIDA ESPERADA ->
+
+Brasil, 10 h 52 min
+Mexico, 07 h 52 min
+Londres, 13 h 52 min
