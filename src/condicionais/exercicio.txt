@@ -1,0 +1,29 @@
+Exercicio 3.
+
+Desenvolva um programa que leia do console os seguintes parametros:
+
+ano, mes, dia, hora, minuto e segundo (essa leitura pode ser feita da forma como o desenvolvedor achar melhor).
+
+após, leia uma quantidade para adicionar, junto com um paramêtro [y, m, d, h, M, s];
+
+depois adicione o valor a data informada e imprima a nova data;
+
+ex.:
+
+informe o ano: 2022
+informe o mes: 12
+informe o dia: 12
+informe a hora: 20
+informe o minuto: 15
+informe o segundo: 33
+
+
+agora informe o valor a adicionar e o parametro [y, m, d, h, M, s]: 1m
+
+a nova data é: 12/01/2023 20:15:33
+
+Obs.:
+y = ano, m = mes, d = dia, h = hora, M = minuto, s = segundo
+
+Requisitos:
+deve-se criar uma classe tempo com métodos e atributos
