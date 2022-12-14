@@ -5,9 +5,9 @@ public class Principal2 {
     public static void main(String[] args) {
 
 
-        for (int i = 0; i < 10; i += 2) {
-            System.out.print(i);
-        }
+        // EXERCICIO:
+        // ESCREVA UM PROGRAMA PARA IMPRIMIR A TABUADA DE MULTIPLICACAO
+        // DE 1 A 9
 
     }
 }
