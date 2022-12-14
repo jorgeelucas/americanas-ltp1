@@ -1,5 +1,7 @@
 package repeticao;
 
+import java.util.Scanner;
+
 public class Principal {
 
     public static void main(String[] args) {
@@ -14,6 +16,21 @@ public class Principal {
          *      intervalo compreendido por eles.
          *
          */
+
+        Scanner scanner = new Scanner(System.in);
+
+        int numero, aux = 0;
+
+        for (int i = 0; i < 5; i++) {
+            System.out.printf("informe %do numero: ", (i+1));
+            numero = scanner.nextInt();
+
+            if (numero > aux) {
+                aux = numero;
+            }
+        }
+
+        System.out.println("maior numero digitado foi: " + aux);
 
     }
 
