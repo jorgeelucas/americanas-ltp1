@@ -58,17 +58,13 @@ public class Palindromo {
     }
 
     public static boolean isPalindromo(String txt) {
-        System.out.println("Palavra original: " + txt);
         txt = txt.replace(" ", "");
 
-        System.out.println("Palavra sem espaco: " + txt);
         char[] chars = txt.toCharArray();
 
         int ultimo = chars.length - 1;
-        System.out.println("Ultima posicao: " + ultimo);
 
         for (int i = 0; i < chars.length / 2; i++) {
-            System.out.println("comparar: " + chars[i] + " = " + chars[ultimo] + "?");
             if (chars[i] != chars[ultimo]) {
                 return false;
             }
