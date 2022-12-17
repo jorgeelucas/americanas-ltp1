@@ -16,6 +16,8 @@ public class Exercicio {
         mover(mat);
         mover(mat);
 
+        imprimir(mat);
+
         // [1,2]
 
         // [_, _, _]
@@ -51,25 +53,52 @@ public class Exercicio {
         }
     }
 
+    /**
+     * solução do José Guilherme Silva
+     * @param mat
+     */
     public static void mover(Character[][] mat) {
-        encontrar(mat);
-
         int[] posicao = encontrar(mat);
 
         int linha = posicao[0];
         int coluna = posicao[1];
 
-        Character elemento = mat[posicao[0]][posicao[1]];
+        if (coluna == mat[linha].length - 1) {
+            moverParaBaixoEComeco(mat, linha);
+        } else {
+            mat[linha][coluna+1] = mat[linha][coluna];
+            mat[linha][coluna] = null;
+        }
+
     }
 
+    /**
+     * solução do Bruno de Oliveira
+     * @param mat
+     */
     public static int[] encontrar(Character[][] mat) {
-        int[] posicoes = new int[2];
-        posicoes[0] = 0;
-        posicoes[1] = 0;
+        int linha = 0;
+        int coluna = 0;
 
-        return posicoes;
+        encontrouX: for ( ; linha < mat.length ; linha++) {
+            for ( ; coluna < mat[linha].length ; coluna++) {
+                if (mat[linha][coluna] != null) {
+                    break encontrouX;
+                }
+            }
+        }
+
+        return new int[] {linha, coluna};
     }
 
-    private static void moverParaBaixoEComeco(Character[][] mat) {
+    /**
+     * solução do Matheus Gaviraghi
+     * @param mat
+     */
+    private static void moverParaBaixoEComeco(Character[][] mat, int linha) {
+        int ultimaColunaDaMatriz = mat[linha].length-1;
+
+        mat[linha][ultimaColunaDaMatriz] = null;
+        mat[linha+1][0] = 'X';
     }
 }
