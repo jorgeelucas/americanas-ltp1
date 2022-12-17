@@ -8,6 +8,9 @@ public class Principal {
 
     public static void main(String[] args) {
 
+        // CHECKED:     HERDAM DE EXCEPTION
+        // UNCHECKED:   HERDAM DE RUNTIMEEXCEPTION
+
 
         // peguei o cadastro do usuário
         // transformei no meu objeto
